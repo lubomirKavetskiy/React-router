@@ -1,14 +1,10 @@
-import React from 'react'
-import {render} from 'react-dom'
-class Comp extends React.Component {
-    render(){
-        return (
-            <p>Hi {this.props.name}</p>
-        );
-    }
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+import './css/index.css';
 
-render(
-    <Comp name="Lubmir"/>,
-    document.querySelector('#container')
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
 );
+
